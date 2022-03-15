@@ -19,8 +19,18 @@
     </properties>
     <modules>
         <module>book-store-core</module>
-        <module>book-store-web</module>
         <module>book-store-ui</module>
+        <module>book-store-web</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.ishikawa</groupId>
+                <artifactId>book-store-ui</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
